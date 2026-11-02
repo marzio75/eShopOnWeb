@@ -27,7 +27,7 @@ resource stg 'Microsoft.Storage/storageAccounts@2019-04-01' = {
     }
 }
 
-module webModule './webApp.bicep' = {
+module webModule './webapp.bicep' = {
     name: 'webDeploy'
     params: {
         skuName: 'S1'
